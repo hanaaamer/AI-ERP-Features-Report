@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>تقرير فني: خطة دمج الذكاء الاصطناعي في نظام فكرة سيتي ERP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm 20mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    body {
+      font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+      direction: rtl;
+      line-height: 1.7;
+      color: #1e293b;
+      background: #f8fafc;
+      margin: 0;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+      background: #ffffff;
+      padding: 40px 48px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 24px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-title h1 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0f172a;
+      margin: 0 0 8px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #0ea5e9;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    .meta-info {
+      font-size: 14px;
+      color: #64748b;
+      margin-top: 6px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 28px 0 16px 0;
+      padding-right: 12px;
+      border-right: 4px solid #0284c7;
+    }
+
+    p {
+      font-size: 15px;
+      color: #334155;
+      margin: 8px 0;
+    }
+
+    .feature-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 20px;
+    }
+
+    .feature-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #0369a1;
+      margin: 0 0 12px 0;
+    }
+
+    ul {
+      margin: 8px 0;
+      padding-right: 22px;
+      color: #334155;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 14.5px;
+    }
+
+    .highlight-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-right: 4px solid #16a34a;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14.5px;
+      color: #166534;
+    }
+
+    .security-box {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-right: 4px solid #dc2626;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #991b1b;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      border: 1px solid #cbd5e1;
+      padding: 12px 14px;
+      text-align: right;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .footer {
+      margin-top: 36px;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 18px;
+      text-align: center;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+
+      .container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+
+      .no-print {
+        display: none;
+      }
+    }
+
+    .print-btn-bar {
+      position: sticky;
+      top: 15px;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+
+    .print-btn {
+      background: #0284c7;
+      color: #ffffff;
+      border: none;
+      padding: 10px 22px;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: 'Cairo', sans-serif;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.3);
+      transition: background 0.2s;
+    }
+
+    .print-btn:hover {
+      background: #0369a1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+
+    <div class="header">
+      <div class="header-title">
+        <span class="badge">نطاق العمل الفني (Scope of Work)</span>
+        <h1>تقرير دمج الذكاء الاصطناعي في نظام ERP</h1>
+        <div class="meta-info">
+          <strong>اسم النظام:</strong> فكرة سيتي (Fekra City) &nbsp;|&nbsp;
+          <strong>تاريخ الإعداد:</strong> نوفمبر 2026
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">📌 مقدمة وأهداف المشروع</div>
+    <p>
+      يهدف هذا المشروع إلى نقل نظام <strong>فكرة سيتي (ERP)</strong> إلى الجيل القادم من الأنظمة الذكية، عبر تزويده
+      بتقنيات الذكاء الاصطناعي التوليدي والتحليلي. ترتكز خطة العمل على محورين أساسيين يعالجان التحديات اليومية لفريق
+      العمل والإدارة:
+    </p>
+    <ul>
+      <li><strong>المحور الأول:</strong> تسهيل وتسريع عمليات تسجيل البيانات وتفادي أخطاء الإدخال اليدوي.</li>
+      <li><strong>المحور الثاني:</strong> توفير مساعد تنفيذي رقمي فوري (AI Agent) يستجيب للاستفسارات والتقارير
+        والملاحظات.</li>
+    </ul>
+
+    <div class="section-title">1️⃣ الميزة الأولى: مساعد التوليد والتسجيل الذكي (Generate with AI)</div>
+    <div class="feature-card">
+      <h3>🎯 الهدف: تسريع ملء شاشات الإدخال وصياغة المحتوى</h3>
+      <p>تضمين زر <strong>Generate with AI</strong> مباشرة بجوار حقول الإدخال الهامة (مثل: دليل وشجرة الحسابات،
+        المنتجات، بنود الفواتير وعروض الأسعار، وتوصيف المهام والمشاريع).</p>
+
+      <strong>خصائص نافذة التحكم (AI Modal):</strong>
+      <ul>
+        <li><strong>تحديد الحقل المستهدف:</strong> توجيه الذكاء الاصطناعي لتوليد نصوص متوافقة مع طبيعة الحقل (الوصف
+          Description، الاسم، الشروط، إلخ).</li>
+        <li><strong>اللغة ونبرة الصياغة:</strong> دعم كامل للغتين العربية والإنجليزية مع إمكانية تحديد النبرة (رسمية
+          محاسبية، تسويقية، مبسطة).</li>
+        <li><strong>مستوى الدقة والإبداع:</strong> التحكم في درجة الإبداع وعدد الكلمات لضمان نصوص دقيقة ومناسبة.</li>
+        <li><strong>سهولة الإدراج:</strong> زر مخصص للإدراج الفوري داخل الحقل بضغطة واحدة، أو نسخ النص للذاكرة.</li>
+      </ul>
+      <div class="highlight-box">
+        💡 <strong>العائد العملي:</strong> اختصار أكثر من <strong>70%</strong> من الوقت المستغرق في صياغة وتوصيف
+        الحسابات والبيانات، وضمان توحيد الصياغة الاحترافية في المنشأة.
+      </div>
+    </div>
+
+    <div class="section-title">2️⃣ الميزة الثانية: المساعد التنفيذي الذكي (AI Agent Dashboard)</div>
+    <div class="feature-card">
+      <h3>🎯 الهدف: مساعد رقمي مركزي يجيب على الملاحظات والاستفسارات</h3>
+      <p>شاشة مركزية مستقلة في القائمة الجانبية للنظام تعمل كـ <strong>Executive Assistant</strong> متاح على مدار الساعة
+        للإجابة عن أسئلة المستخدم وإجراء التحليلات الفورية.</p>
+
+      <strong>أبرز مكونات الشاشة:</strong>
+      <ul>
+        <li><strong>سجل المحادثات والبحث (Chat History):</strong> إمكانية فتح جلسات حوار جديدة وحفظ سجل المحادثات
+          السابقة لسهولة المتابعة والرجوع إليها.</li>
+        <li><strong>كروت الاستعلامات السريعة (Quick Action Cards):</strong> أزرار جاهزة بضغطة زر للإجابة عن أهم المؤشرات
+          اليومية:
+          <ul>
+            <li>📄 <em>عرض عروض الأسعار المقبولة لهذا الشهر (Accepted Proposals).</em></li>
+            <li>💵 <em>حصر فواتير المبيعات المسودة غير المعتمدة (Draft Invoices).</em></li>
+            <li>📁 <em>ملخص المشاريع الجارية ونسب إنجازها (Ongoing Projects).</em></li>
+            <li>👥 <em>قائمة أول 10 عملاء محتملين نشطين (Active Leads).</em></li>
+          </ul>
+        </li>
+        <li><strong>شات تفاعلي باللغة الطبيعية:</strong> يتيح توجيه أي استفسار أو ملاحظة باللغة العربية أو الإنجليزية
+          ليقوم النظام بقراءة البيانات وتحليلها وتقديم إجابة دقيقة وملخصة.</li>
+      </ul>
+      <div class="highlight-box">
+        📊 <strong>العائد العملي:</strong> وصول فوري للقرارات والمؤشرات الإدارية دون الحاجة لاستخراج وتصدير تقارير ورقية
+        أو ملفات Excel معقدة.
+      </div>
+    </div>
+
+    <div class="section-title">3️⃣ الأمان وسرية البيانات (Security & Governance)</div>
+    <div class="security-box">
+      🔒 <strong>التزام صارم بحماية بيانات العميل:</strong>
+      <ul>
+        <li><strong>عزل تام للبيانات:</strong> لا تُستخدم أية بيانات مالية أو داخلية لتدريب نماذج الذكاء الاصطناعي
+          العامة.</li>
+        <li><strong>الالتزام بالصلاحيات (Role-Based Access):</strong> لا يُقدم المساعد الذكي أي معلومة لمستخدم ما لم تكن
+          تقع ضمن صلاحياته المحددة بالنظام مسبقاً.</li>
+        <li><strong>قنوات اتصال مشفرة:</strong> جميع التبادلات والطلبات تتم عبر بروتوكولات حماية عالية التشفير (TLS 1.3
+          / HTTPS).</li>
+      </ul>
+    </div>
+
+    <div class="section-title">4️⃣ جدول مراحل التنفيذ والتسليم (Roadmap)</div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 25%;">المرحلة</th>
+          <th style="width: 45%;">المهام المشمولة</th>
+          <th style="width: 30%;">المخرجات المتوقعة</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>المرحلة الأولى: التصميم (UI/UX)</strong></td>
+          <td>تصميم النوافذ المنبثقة وشاشة الـ AI Agent بما يطابق هوية وتصميم نظام فكرة سيتي.</td>
+          <td>واجهات مستخدم تفاعلية وجاهزة للتطوير.</td>
+        </tr>
+        <tr>
+          <td><strong>المرحلة الثانية: التوليد السريع</strong></td>
+          <td>برمجة ميزة <code>Generate with AI</code> وربطها بنماذج الحسابات والفواتير.</td>
+          <td>إمكانية ملء النماذج تلقائياً بالذكاء الاصطناعي.</td>
+        </tr>
+        <tr>
+          <td><strong>المرحلة الثالثة: محرك الـ AI Agent</strong></td>
+          <td>بناء خوارزميات الاستعلام الذكي، وتجهيز كروت الأوامر وسجل المحادثات.</td>
+          <td>مساعد ذكي تفاعلي يجيب على استفسارات المستخدم.</td>
+        </tr>
+        <tr>
+          <td><strong>المرحلة الرابعة: الاختبار والإطلاق</strong></td>
+          <td>اختبار السرعة، دقة البيانات، والأمان، وتدريب فريق العمل.</td>
+          <td>تسليم كامل وتشغيل رسمي في بيئة العمل.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer">
+      تم إعداد هذا التقرير لنظام <strong>فكرة سيتي (Fekra City)</strong> &bull; جميع الحقوق محفوظة &copy; 2026
+    </div>
+  </div>
+
+</body>
+
+</html>
